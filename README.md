@@ -3,11 +3,9 @@ folder node_modules tidak disertakan:
 ### `$ npm install`
 ### `$ npm run start:dev`
 
-URL [http://localhost:8000](http://localhost:8000)
-
-- API register [http://localhost:8000/api/register](http://localhost:8000/api/register)
-- API login [http://localhost:8000/api/login](http://localhost:8000/api/login)
-- API cek user [http://localhost:8000/api/user](http://localhost:8000/api/user)
+- API register [http://localhost:8000/api/register](http://localhost:8000/api/register) [POST]
+- API login [http://localhost:8000/api/login](http://localhost:8000/api/login) [POST]
+- API cek user [http://localhost:8000/api/user](http://localhost:8000/api/user) [GET]
 
 **Screenshot:**
 Token berubah tiap 4 detik:
