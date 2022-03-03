@@ -18,7 +18,7 @@ export class AppController {
     @Body('password') password: string
   ) {
     const hashedPassword = await bcrypt.hash(password, 12);
-    const user = await this.appService.create({
+    const user = await this.appService.create({ // register user baru
       username,
       password: hashedPassword
     });
@@ -33,14 +33,14 @@ export class AppController {
     @Res({passthrough: true}) response: Response
   ) {
     const user = await this.appService.findOne({username});
-    if (!user) {
+    if (!user) { // Jika username tidak cocok
       throw new BadRequestException('username tidak ditemukan');
     }
-    if (!await bcrypt.compare(password, user.password)) {
+    if (!await bcrypt.compare(password, user.password)) { // Jika password tidak cocok
       throw new BadRequestException('password salah');
     }
     const jwt = await this.jwtService.signAsync({id: user.id});
-    response.cookie('jwt', jwt, {httpOnly: true});
+    response.cookie('jwt', jwt, {httpOnly: true}); // simpan cookie
     return {
       message: 'login berhasil'
     };
@@ -49,12 +49,12 @@ export class AppController {
   @Get('user')
   async user(@Req() request: Request) {
     try {
-      const cookie = request.cookies['jwt'];
-      const data = await this.jwtService.verifyAsync(cookie);
-      if (!data) {
+      const cookie = request.cookies['jwt']; // Cek Cookie
+      const data = await this.jwtService.verifyAsync(cookie); // Verifikasi Cookie
+      if (!data) { // Jika data tidak valid
         throw new UnauthorizedException();
       }
-      const user = await this.appService.findOne({id: data['id']});
+      const user = await this.appService.findOne({id: data['id']}); // Get user by id
       const {password, ...result} = user;
       return result;
     } catch (e) {
@@ -64,7 +64,7 @@ export class AppController {
 
   @Post('logout')
   async logout(@Res({passthrough: true}) response: Response) {
-    response.clearCookie('jwt');
+    response.clearCookie('jwt'); // Hapus Cookie
     return {
       message: 'logout berhasil'
     }
