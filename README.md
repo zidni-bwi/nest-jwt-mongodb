@@ -9,14 +9,5 @@ folder node_modules tidak disertakan:
 - API cek user [http://localhost:8000/api/user](http://localhost:8000/api/user) [GET]
 
 **Screenshot:**
-Token berubah tiap 4 detik:
-![alt tag](https://github.com/zidni-bwi/react-dashboard-jwt/blob/main/Screenshot_5.png)
-
-Refresh token dikirim tiap client melakukan refresh:
-![alt tag](https://github.com/zidni-bwi/react-dashboard-jwt/blob/main/Screenshot_7.png)
-
-Percobaan store state global menggunakan Redux tapi belum berhasil untuk melakukan update:
-![alt tag](https://github.com/zidni-bwi/react-dashboard-jwt/blob/main/Screenshot_8.png)
-
-Tampilan Dashboard:
-![alt tag](https://github.com/zidni-bwi/react-dashboard-jwt/blob/main/Screenshot_9.png)
+Login sukses jwt tersimpan sebagai cookie:
+![alt tag](https://github.com/zidni-bwi/nest-jwt-mongodb/blob/main/Screenshot_515.png)
