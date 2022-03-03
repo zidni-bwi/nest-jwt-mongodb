@@ -5,6 +5,7 @@ folder node_modules tidak disertakan:
 
 - API register [http://localhost:8000/api/register](http://localhost:8000/api/register) [POST]
 - API login [http://localhost:8000/api/login](http://localhost:8000/api/login) [POST]
+- API logout [http://localhost:8000/api/logout](http://localhost:8000/api/logout) [POST]
 - API cek user [http://localhost:8000/api/user](http://localhost:8000/api/user) [GET]
 
 **Screenshot:**
