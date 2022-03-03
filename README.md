@@ -5,9 +5,9 @@ folder node_modules tidak disertakan:
 
 URL [http://localhost:8000](http://localhost:8000)
 
-API register [http://localhost:8000/api/register](http://localhost:8000/api/register)
-API login [http://localhost:8000/api/login](http://localhost:8000/api/login)
-API cek user [http://localhost:8000/api/user](http://localhost:8000/api/user)
+- API register [http://localhost:8000/api/register](http://localhost:8000/api/register)
+- API login [http://localhost:8000/api/login](http://localhost:8000/api/login)
+- API cek user [http://localhost:8000/api/user](http://localhost:8000/api/user)
 
 **Screenshot:**
 Token berubah tiap 4 detik:
