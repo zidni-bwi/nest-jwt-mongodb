@@ -10,4 +10,4 @@ folder node_modules tidak disertakan:
 
 **Screenshot:**
 Login sukses jwt tersimpan sebagai cookie:
-![alt tag](https://github.com/zidni-bwi/nest-jwt-mongodb/blob/main/Screenshot_515.png)
+![alt tag](https://github.com/zidni-bwi/nest-jwt-mongodb/blob/main/Screenshot_12.png)
