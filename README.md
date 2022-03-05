@@ -3,6 +3,8 @@ folder node_modules tidak disertakan:
 ### `$ npm install`
 ### `$ npm run start:dev`
 
+Database: nest-jwt
+
 - API register [http://localhost:8000/api/register](http://localhost:8000/api/register) [POST]
 - API login [http://localhost:8000/api/login](http://localhost:8000/api/login) [POST]
 - API logout [http://localhost:8000/api/logout](http://localhost:8000/api/logout) [POST]
