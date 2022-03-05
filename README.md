@@ -11,5 +11,5 @@ Database: nest-jwt
 - API cek user [http://localhost:8000/api/user](http://localhost:8000/api/user) [GET]
 
 **Screenshot:**
-POST Login sukses jwt tersimpan sebagai cookie:
+POST Login sukses jwt tersimpan sebagai cookie (via Postman):
 ![alt tag](https://github.com/zidni-bwi/nest-jwt-mongodb/blob/main/Screenshot_12.png)
