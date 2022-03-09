@@ -1,3 +1,5 @@
+Repo ini adalah revisi untuk repo: https://github.com/zidni-bwi/react-dashboard-jwt 
+
 folder node_modules tidak disertakan:
 
 ### `$ npm install`
